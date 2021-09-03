@@ -1,0 +1,114 @@
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 300;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 32px;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table style="width: 75%;">
+            <tbody>
+                <tr>
+                    <td style="width: 22%; height:auto; background-color:grey; padding:16px; text-align: center;">
+                        <center>
+                            <div class="container">
+                                <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <a href="https://hi.com">John Doe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <br/>
+                    </td>
+                    <td style="width: 22%; height:auto; background-color:grey; padding:16px; text-align: center;">
+                        <center>
+                            <div class="container">
+                                <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <a href="https://hi.com">John Doe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </td>
+                    <td></td>
+                    <td style="width: 22%; height:auto; background-color:grey; padding:16px; text-align: center;">
+                        <center>
+                            <div class="container">
+                                <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <a href="https://hi.com">John Doe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                    <td style="text-align: center;">
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
