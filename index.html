@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/main-style.css">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     </head>
-    <body onload="myFunction()">
+    <body>
         <div id="content" class="loadanim">
             <div class="container">
 		    <div class="open-text">
@@ -166,25 +166,8 @@
 </div>
         </div>
 
-
-        <div id="loader-wrapper">
-            <span class="loader">
-                <span class="loader-inner"></span>
-            </span>
             <br/>
             <br/>
         </div>
-        <script>
-            var myVar;
-
-            function myFunction() {
-                myVar = setTimeout(showPage, 500);
-            }
-
-            function showPage() {
-                document.getElementById("loader-wrapper").style.display = "none";
-                document.getElementById("content").style.display = "block";
-            }
-        </script>
     </body>
 </html>
