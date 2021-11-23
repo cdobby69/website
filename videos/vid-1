@@ -1,1 +1,19 @@
+html>
+<head>
+<title>1v1.lol | Cdobby Website</title>
+<link rel="stylesheet" href="https://cdobby69.github.io/website/css/game-style.css">
+</head>
+<body>
+<div class="topbar">
+  <table class="topbarContent">
+    <tbody>
+        <tr>
+          <td style="text-align: left;"><p style="font-size:30px;">Video</p></td>
+           <td style="text-align: center;"><p style="font-size:30px;">© Cdobby Website</p></td>
+            <td style="text-align: right;"><a href="../index.html"><img src="../img/HomeButton.png" alt="Cdobby Studios" width=50></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
 <center><iframe width="800" height="450" src="https://www.youtube.com/embed/NtxYE9bG_CU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
