@@ -1,15 +1,38 @@
+
 <html>
 <head>
+
+<script>
+function myFunction() { 
+	document.getElementById("mainFrameOne").style.display="block"; 
+	document.getElementById("mainFrameTwo").style.display="none"; 
+}
+</script>
+
+
 <title>Game Title | Cdobby Website</title>
-<link rel="stylesheet" href="../css/game-style.css">
+<link rel="stylesheet" href="https://cdobby69.github.io/website/css/game-style.css">
+<style>
+.fullscreen-btn {
+border:none;
+background-color:#ff8000;
+padding: 10px 50px;
+color:#1a1a1a;
+text-size:40px;
+}
+
+</style>
 </head>
 <body>
-<div class="topbar">
+
+<div id="mainFrameTwo" style="display:block;" class="topbar">
   <table class="topbarContent">
     <tbody>
         <tr>
           <td style="text-align: left;"><p style="font-size:30px;">Game Title</p></td>
+           <td style="text-align: left;"><p style="font-size:30px;"><button class="fullscreen-btn" id="mainFrameOne" onclick="myFunction()" href="#" class>Fullscreen</button></td>
            <td style="text-align: left;"><p style="font-size:30px;">© Cdobby Website</p></td>
+
             <td style="text-align: right;"><a href="../index.html"><img src="../img/HomeButton.png" alt="Cdobby Studios" width=50></td>
         </tr>
     </tbody>
@@ -22,4 +45,3 @@
   
 </body>
 </html>
-
