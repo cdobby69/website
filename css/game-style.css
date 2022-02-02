@@ -28,6 +28,14 @@ body {
   
 }
 
+.fullscreen-btn {
+border:none;
+background-color:#ff8000;
+padding: 10px 50px;
+color:#1a1a1a;
+text-size:40px;
+}
+
 .content {
 
 }
