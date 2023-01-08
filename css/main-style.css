@@ -8,11 +8,10 @@
 }
 
 body {
- background-color:#333333;
+ background-color:#343541;
  
-  --screen-width: 100vw;
   --screen-height: 100vh;
-  
+   width: var(--screen-width);
   --nav-text-color: #ffffff;
   --nav-height: 50px;
   --nav-width: 320px;
@@ -28,7 +27,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #333333; 
+  background: #343541; 
 }
  
 /* Handle */
@@ -43,7 +42,6 @@ body {
 }
 
 .container {
-  background-image: linear-gradient(to bottom right, #333333 0% 65%, #333333 95% 100%);
   width: var(--screen-width);
   height: var(--screen-height);
   display: grid;
@@ -52,8 +50,15 @@ body {
 }
 
 .open-text {
- color:#ff8000;
- }
+ color:#ececf1;
+align-items:center;
+text-align: center; position: absolute; top: 50%; transform: translateY(-70%); 
+
+}
+
+.open-text h1 {
+text-shadow: 0 0 20px #ff8000;}
+
 
 .btn {
   color: var(--nav-text-color);
@@ -64,15 +69,14 @@ body {
   align-items: center;
   justify-content: center;
   user-select: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: all 150ms ease-out;
 }
 
 .btn-open {
-  background-color: #ff8000;
+  background-color: #3e3f4b;
   border-radius: 8px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 0 0 rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 5px 10px rgb(255, 131, 0.3), 0 0 0 rgb(255, 131, 0.3) inset;
 }
 
 .btn-open:active, .btn-open:focus {
@@ -455,7 +459,7 @@ transition: 1s;
                 -webkit-animation-name: loadanim;
                 -webkit-animation-duration: 10s;
                 animation-name: loadanim;
-                animation-duration: 10s
+                animation-duration: 0s
             }
 
             #content {
@@ -464,78 +468,15 @@ transition: 1s;
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                backround-color: #333333;
+                backround-color: #343541;
             }
 
-            #loader-wrapper {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: #333333;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .loader {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                position: relative;
-                border: 4px solid #1a1a1a;
-                animation: loader 2s infinite ease;
-            }
-
-            .loader-inner {
-                vertical-align: top;
-                display: inline-block;
-                width: 100%;
-                background-color: #ff8000;
-                animation: loader-inner 2s infinite ease-in;
-            }
-
-            @keyframes loader {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                25% {
-                    transform: rotate(180deg);
-                }
-
-                50% {
-                    transform: rotate(180deg);
-                }
-
-                75% {
-                    transform: rotate(360deg);
-                }
-
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-
-            @keyframes loader-inner {
-                0% {
-                    height: 0%;
-                }
-
-                25% {
-                    height: 0%;
-                }
-
-                50% {
-                    height: 100%;
-                }
-
-                75% {
-                    height: 100%;
-                }
-
-                100% {
-                    height: 0%;
-                }
-            }
+.columns {
+  display: flex;
+  flex-direction: row; /* Change to 'column' to stack the columns vertically */
+}
+.column {
+  flex: 1;
+  margin: 0 150px;
+margin-bottom:40px;
+}
